@@ -51,18 +51,28 @@ body
   flex-direction: column
   justify-content: center
 
-.header-site,
 .paragrath
   color: $colorTextWhite
   text-align: center
 
-.header-site
+.heading
   font-family: Roboto
-  font-size: 52px
-  line-height: 52px
   font-weight: 600
   text-transform: uppercase
-  padding: 20px 0
+  text-align: center
+
+  &_main
+    font-size: 52px
+    line-height: 52px
+    padding: 20px 0
+    color: $colorTextWhite
+
+  &_section
+    font-size: 30px
+    line-height: 30px
+    margin-bottom: 30px
+    color: $colorTextBlack
+
 
 .paragrath
   font-family: "Times New Roman"
@@ -93,3 +103,21 @@ body
   animation: link-down 1s linear 1s infinite normal
   font-size: 30px
   color: $colorTextWhite
+
+.menu-sticky
+  position: sticky
+
+  &__logo,
+  &__link
+    color: $colorTextBlack
+
+  &__logo:hover,
+  &__link:hover
+    color: $colorBrand
+
+
+.line
+  background: rgba(135, 135, 135, 0.5)
+  width: 100px
+  height: 1px
+  margin: 30px auto

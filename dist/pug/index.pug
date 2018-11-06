@@ -14,24 +14,29 @@ html(lang="ru")
 
 
                     - var menuLinksName=["Главная", "Услуги", "Последние работы", "Навыки", "Контакты"]
+                    - var menuLinksHref=["#", "#services", "#", "#", "#"]
                     ul.menu
                         - for(let i=0; i<menuLinksName.length; i++)
                             li.list
-                                a(class="link" href="#")=menuLinksName[i]
+                                a(class="link" href=menuLinksHref[i])=menuLinksName[i]
                 .head-info
                     .paragrath="Привет, меня зовут Павел Куделенский и я"
-                    h1.header-site="пока ... верстальщик"
+                    h1(class=["heading", "heading_main"])="пока ... верстальщик"
                     .paragrath="создающий шаблоны сайтов по макету"
 
-                a(class=["link", "link-down"] href="#")
+                a(class=["link", "link-down"] href="#services")
                     i(class=["fas", "fa-angle-down", "icon-down"])
 
-        .services
+        main#services
             .container
-                nav(class=["main-menu", "main-menu-sticky"])
-                    a(class="logo" href="#") PAVEL
+                nav(class=["main-menu", "menu-sticky"])
+                    a(class=["logo", "menu-sticky__logo"] href="#") PAVEL
 
                     ul.menu
                         - for(let i=0; i<menuLinksName.length; i++)
                             li.list
-                                a(class="link" href="#")=menuLinksName[i]
+                                a(class=["link", "menu-sticky__link"] href=menuLinksHref[i])=menuLinksName[i]
+
+            section.services
+                h3(class=["heading", "heading_section"])="Мои услуги"
+                .line
