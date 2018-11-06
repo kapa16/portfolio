@@ -4,6 +4,8 @@ html(lang="ru")
         meta(charset="UTF-8")
         link(rel="stylesheet" href="css/main.css")
         link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous")
+        script(src="js/jquery.js")
+        script(src="js/main.js")
         title="My folio"
 
     body
@@ -14,7 +16,7 @@ html(lang="ru")
 
 
                     - var menuLinksName=["Главная", "Услуги", "Последние работы", "Навыки", "Контакты"]
-                    - var menuLinksHref=["#", "#services", "#", "#", "#"]
+                    - var menuLinksHref=["#", "#services", "#works", "#", "#"]
                     ul.menu
                         - for(let i=0; i<menuLinksName.length; i++)
                             li.list
@@ -28,7 +30,7 @@ html(lang="ru")
                     i(class=["fas", "fa-angle-down", "icon-down"])
 
         .sticky
-            .container
+            div(class=["container", "sticky__container"])
                 nav(class=["main-menu", "sticky__menu"])
                     a(class=["logo", "sticky__logo"] href="#") PAVEL
 
@@ -41,7 +43,7 @@ html(lang="ru")
             div(class=["container", "container_section", "services__container"])
                 h3(class=["heading", "heading_sections"])="Мои услуги"
                 .line
-                div(class=["paragrath", "services__paragrath"])="Тут что-нибудь появится, а пока Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet beatae cumque, ea eos rem ut vero voluptatum. Alias aliquam cumque delectus deserunt dignissimos doloremque dolores doloribus eos error fugiat laborum molestiae, molestias natus nesciunt nobis quas qui quidem \n"
+                div(class=["paragrath", "paragrath_sections"])="Тут что-нибудь появится, а пока Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet beatae cumque, ea eos rem ut vero voluptatum. Alias aliquam cumque delectus deserunt dignissimos doloremque dolores doloribus eos error fugiat laborum molestiae, molestias natus nesciunt nobis quas qui quidem \n"
 
                 .services__cards
                     - for(let i=0; i<4; i++)
@@ -54,4 +56,11 @@ html(lang="ru")
             div(class=["container", "container_section", "works__container"])
                 h3(class=["heading", "heading_sections"])="последние работы"
                 .line
-                div(class=["paragrath", "services__paragrath"])="Тут что-нибудь появится, а пока Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet beatae cumque, ea eos rem ut vero voluptatum. Alias aliquam cumque delectus deserunt dignissimos doloremque dolores doloribus eos error fugiat laborum molestiae, molestias natus nesciunt nobis quas qui quidem \n"
+                div(class=["paragrath", "paragrath_sections"])="Тут что-нибудь появится, а пока Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet beatae cumque, ea eos rem ut vero voluptatum. Alias aliquam cumque delectus deserunt dignissimos doloremque dolores doloribus eos error fugiat laborum molestiae, molestias natus nesciunt nobis quas qui quidem \n"
+
+                div(class="works__cards")
+                    .works__img_size
+                        a(class="works-card works__img_size" href="#")
+                            img(class="works__img_size" src="img/interior-home-page.jpg" alt="interior shop")
+                            div(class="works-card__mask")
+                                h4(class=["heading", "works__heading"])="сайт"
