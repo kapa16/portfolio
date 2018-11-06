@@ -27,16 +27,31 @@ html(lang="ru")
                 a(class=["link", "link-down"] href="#services")
                     i(class=["fas", "fa-angle-down", "icon-down"])
 
-        main#services
+        .sticky
             .container
-                nav(class=["main-menu", "menu-sticky"])
-                    a(class=["logo", "menu-sticky__logo"] href="#") PAVEL
+                nav(class=["main-menu", "sticky__menu"])
+                    a(class=["logo", "sticky__logo"] href="#") PAVEL
 
                     ul.menu
                         - for(let i=0; i<menuLinksName.length; i++)
                             li.list
-                                a(class=["link", "menu-sticky__link"] href=menuLinksHref[i])=menuLinksName[i]
+                                a(class=["link", "sticky__link"] href=menuLinksHref[i])=menuLinksName[i]
 
-            section.services
-                h3(class=["heading", "heading_section"])="Мои услуги"
+        section#services.services
+            div(class=["container", "container_section", "services__container"])
+                h3(class=["heading", "heading_sections"])="Мои услуги"
                 .line
+                div(class=["paragrath", "services__paragrath"])="Тут что-нибудь появится, а пока Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet beatae cumque, ea eos rem ut vero voluptatum. Alias aliquam cumque delectus deserunt dignissimos doloremque dolores doloribus eos error fugiat laborum molestiae, molestias natus nesciunt nobis quas qui quidem \n"
+
+                .services__cards
+                    - for(let i=0; i<4; i++)
+                        div(class=["card", "services__card"])
+                            .card__icon
+                            h4(class=["heading", "card__heading"])="вёрстка"
+                            div(class=["paragrath", "card__paragrath"])="Good things come to those who wait, but only the things left by those who hustle"
+
+        section#works.works
+            div(class=["container", "container_section", "works__container"])
+                h3(class=["heading", "heading_sections"])="последние работы"
+                .line
+                div(class=["paragrath", "services__paragrath"])="Тут что-нибудь появится, а пока Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet beatae cumque, ea eos rem ut vero voluptatum. Alias aliquam cumque delectus deserunt dignissimos doloremque dolores doloribus eos error fugiat laborum molestiae, molestias natus nesciunt nobis quas qui quidem \n"
