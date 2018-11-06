@@ -1,0 +1,95 @@
+body
+  font-family: sans-serif
+
+html,
+body
+  height: 100%
+
+.header
+  height: 100% //todo заменить на javascript для кроссбрузерности
+  position: relative
+  background: url("../img/bg-header.jpg")
+
+.container
+  height: 100%
+  width: 1200px
+  margin: 0 auto
+
+.container_flex
+  display: flex
+  justify-content: space-between
+  flex-direction: column
+
+.main-menu
+  display: flex
+  justify-content: space-between
+  text-transform: uppercase
+
+.logo
+  font-family: "Permanent Marker", cursive
+  @include display-color(block, $colorTextGray)
+  font-size: 30px
+  padding: 10px
+
+  &:hover
+    color: $colorTextWhite
+
+.menu
+  display: flex
+  justify-content: space-between
+
+
+.link
+  @include display-color(block, $colorTextGray)
+  padding: 20px
+
+  &:hover
+    color: $colorTextWhite
+
+.head-info
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+.header-site,
+.paragrath
+  color: $colorTextWhite
+  text-align: center
+
+.header-site
+  font-family: Roboto
+  font-size: 52px
+  line-height: 52px
+  font-weight: 600
+  text-transform: uppercase
+  padding: 20px 0
+
+.paragrath
+  font-family: "Times New Roman"
+  font-size: 20px
+  line-height: 20px
+
+@keyframes link-down
+  0%
+    top: 0px
+  100%
+    top: 30px
+    opacity: 0
+
+
+.link-down
+  width: 60px
+  height: 60px
+  position: relative
+  border: 2px solid $colorTextWhite
+  border-radius: 50%
+  align-self: center
+  margin-bottom: 20px
+
+.icon-down
+  position: absolute
+  top: 0px
+  left: 19px
+  animation: link-down 1s linear 1s infinite normal
+  font-size: 30px
+  color: $colorTextWhite

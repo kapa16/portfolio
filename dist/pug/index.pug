@@ -3,16 +3,35 @@ html(lang="ru")
     head
         meta(charset="UTF-8")
         link(rel="stylesheet" href="css/main.css")
+        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous")
         title="My folio"
 
     body
         header.header
-            .container
+            div(class=["container", "container_flex"])
                 nav.main-menu
-                    a(class="logo" href="#")
+                    a(class="logo" href="#") pavel
+
 
                     - var menuLinksName=["Главная", "Услуги", "Последние работы", "Навыки", "Контакты"]
                     ul.menu
-                        - for(i=0; i<menuLinksName.length; i++)
+                        - for(let i=0; i<menuLinksName.length; i++)
+                            li.list
+                                a(class="link" href="#")=menuLinksName[i]
+                .head-info
+                    .paragrath="Привет, меня зовут Павел Куделенский и я"
+                    h1.header-site="пока ... верстальщик"
+                    .paragrath="создающий шаблоны сайтов по макету"
+
+                a(class=["link", "link-down"] href="#")
+                    i(class=["fas", "fa-angle-down", "icon-down"])
+
+        .services
+            .container
+                nav(class=["main-menu", "main-menu-sticky"])
+                    a(class="logo" href="#") PAVEL
+
+                    ul.menu
+                        - for(let i=0; i<menuLinksName.length; i++)
                             li.list
                                 a(class="link" href="#")=menuLinksName[i]
