@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        link(rel="stylesheet" href="css/main.css")
+        title="My folio"
+
+    body
+        header.header
+            .container
+                nav.main-menu
+                    a(class="logo" href="#")
+
+                    - var menuLinksName=["Главная", "Услуги", "Последние работы", "Навыки", "Контакты"]
+                    ul.menu
+                        - for(i=0; i<menuLinksName.length; i++)
+                            li.list
+                                a(class="link" href="#")=menuLinksName[i]
