@@ -8,6 +8,7 @@ body
 .header
   height: 100%
   background: url("../img/bg-header.jpg")
+  background-size: cover
 
 .container
   width: 1200px
@@ -35,6 +36,7 @@ body
 
   &:hover
     color: $colorTextWhite
+    text-shadow: 0 0 4px $colorTextWhite
 
 .menu
   display: flex
@@ -47,6 +49,7 @@ body
 
   &:hover
     color: $colorTextWhite
+    text-shadow: 0 0 8px $colorTextWhite
 
 .head-info
   display: flex
@@ -56,6 +59,10 @@ body
 .paragrath
   color: $colorTextWhite
   text-align: center
+
+.cards
+  display: flex
+  justify-content: space-around
 
 .heading
   font-family: Roboto
@@ -105,7 +112,9 @@ body
 .sticky
   background-color: white
   width: 100%
-  border-bottom: 1px solid #f5f5f5
+  border-bottom: 2px solid #f5f5f5
+  box-shadow: 0 0 4px #f5f5f5
+  z-index: 10
 
   &_fixed
     position: fixed
@@ -118,7 +127,7 @@ body
   &__logo:hover,
   &__link:hover
     color: $colorBrand
-
+    text-shadow: 0 0 2px $colorBrand
 
 .line
   background: rgba(135, 135, 135, 0.5)
@@ -128,10 +137,6 @@ body
 
 .services
   background: #f5f5f5
-
-  &__cards
-    display: flex
-    justify-content: space-between
 
 .card
   display: flex
@@ -160,11 +165,6 @@ body
     color: #666
 
 .works
-
-  &__cards
-    display: flex
-    justify-content: center
-    padding: 0 100px
 
   &__card
     position: relative
@@ -196,9 +196,22 @@ body
     height: 100%
     border: 1px solid $colorTextWhite
     color: $colorTextWhite
+    font-size: 22px
 
   &__link:hover &-card__mask
     display: block
 
 .skills
   background: #f5f5f5
+
+  &-card__heading
+    color: #222
+    margin-top: 50px
+
+
+
+
+
+
+
+

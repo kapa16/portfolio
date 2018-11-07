@@ -6,7 +6,7 @@ html(lang="ru")
         link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous")
         script(src="js/jquery.js")
         script(src="js/main.js")
-        title="My folio"
+        title="My portfolio"
 
     body
         header.header
@@ -45,7 +45,7 @@ html(lang="ru")
                 .line
                 div(class=["paragrath", "paragrath_sections"])="Тут что-нибудь появится, а пока Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet beatae cumque, ea eos rem ut vero voluptatum. Alias aliquam cumque delectus deserunt dignissimos doloremque dolores doloribus eos error fugiat laborum molestiae, molestias natus nesciunt nobis quas qui quidem \n"
 
-                .services__cards
+                .cards
                     - for(let i=0; i<4; i++)
                         div(class=["card", "services__card"])
                             .card__icon
@@ -58,15 +58,15 @@ html(lang="ru")
                 .line
                 div(class=["paragrath", "paragrath_sections"])="Тут что-нибудь появится, а пока Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet beatae cumque, ea eos rem ut vero voluptatum. Alias aliquam cumque delectus deserunt dignissimos doloremque dolores doloribus eos error fugiat laborum molestiae, molestias natus nesciunt nobis quas qui quidem \n"
 
-                div(class="works__cards")
+                div(class="cards")
                     - var siteImgList = ["sds.jpg", "whitesquare.jpg", "webdevblog.jpg", "interior.jpg", "brand.jpg"]
-                    - var siteTitleList = ["simple page", "whitesquare", "landing", "interior shop", "brand shop"]
+                    - var siteTitleList = ["simple page", "one page whitesquare", "landing responsive ", "interior shop", "brand shop"]
                     - var siteUrlList = ["sds", "whitesquare", "webdevblog", "interior", "brand"]
 
                     - for(let i=0; i<siteImgList.length; i++)
                         div(class=["works__img_size", "works__card"])
                             a(class="works__link works__img_size" href="works/"+siteUrlList[i]+"/index.html" target="_blank")
-                                img(class="works__img_size" src="img/"+siteImgList[i] alt="interior shop")
+                                img(class="works__img_size" src="img/"+siteImgList[i] alt=siteTitleList[i])
                                 div(class="works-card__mask")
                                     h4(class=["heading", "works__heading"])=siteTitleList[i]
 
@@ -76,3 +76,9 @@ html(lang="ru")
                 .line
                 div(class=["paragrath", "paragrath_sections"])="Тут что-нибудь появится, а пока Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet beatae cumque, ea eos rem ut vero voluptatum. Alias aliquam cumque delectus deserunt dignissimos doloremque dolores doloribus eos error fugiat laborum molestiae, molestias natus nesciunt nobis quas qui quidem \n"
 
+                .cards
+                    -var skills = ["HTML5", "CSS3", "Javascript", "PHP"]
+                    - for(let i=0; i<skills.length; i++)
+                        div(class="skills-card")
+                            canvas(id="value"+(i+1) height="140" width="140")
+                            h4(class=["heading", "skills-card__heading"])=skills[i]
