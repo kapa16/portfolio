@@ -16,19 +16,19 @@ html(lang="ru")
 
 
                     - var menuLinksName=["Главная", "Услуги", "Последние работы", "Навыки", "Контакты"]
-                    - var menuLinksHref=["#", "#services", "#works", "#", "#"]
+                    - var menuLinksHref=["#", "#services", "#works", "#skills", "#"]
                     ul.menu
                         - for(let i=0; i<menuLinksName.length; i++)
                             li.list
                                 a(class="link" href=menuLinksHref[i])=menuLinksName[i]
                 .head-info
                     .paragrath="Привет, меня зовут Павел Куделенский и я"
-                    h1(class=["heading", "heading_main"])="пока ... верстальщик"
-                    .paragrath="создающий шаблоны сайтов по макету"
+                    h1(class=["heading", "heading_main"])="начинающий web-программист"
+                    .paragrath="на данный момент создаю шаблоны сайтов по макету"
 
                 a(class=["link", "link-down"] href="#services")
                     i(class=["fas", "fa-angle-down", "icon-down"])
-
+        #services
         .sticky
             div(class=["container", "sticky__container"])
                 nav(class=["main-menu", "sticky__menu"])
@@ -39,7 +39,7 @@ html(lang="ru")
                             li.list
                                 a(class=["link", "sticky__link"] href=menuLinksHref[i])=menuLinksName[i]
 
-        section#services.services
+        section.services
             div(class=["container", "container_section", "services__container"])
                 h3(class=["heading", "heading_sections"])="Мои услуги"
                 .line
@@ -59,8 +59,20 @@ html(lang="ru")
                 div(class=["paragrath", "paragrath_sections"])="Тут что-нибудь появится, а пока Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet beatae cumque, ea eos rem ut vero voluptatum. Alias aliquam cumque delectus deserunt dignissimos doloremque dolores doloribus eos error fugiat laborum molestiae, molestias natus nesciunt nobis quas qui quidem \n"
 
                 div(class="works__cards")
-                    .works__img_size
-                        a(class="works-card works__img_size" href="#")
-                            img(class="works__img_size" src="img/interior-home-page.jpg" alt="interior shop")
-                            div(class="works-card__mask")
-                                h4(class=["heading", "works__heading"])="сайт"
+                    - var siteImgList = ["sds.jpg", "whitesquare.jpg", "webdevblog.jpg", "interior.jpg", "brand.jpg"]
+                    - var siteTitleList = ["simple page", "whitesquare", "landing", "interior shop", "brand shop"]
+                    - var siteUrlList = ["sds", "whitesquare", "webdevblog", "interior", "brand"]
+
+                    - for(let i=0; i<siteImgList.length; i++)
+                        div(class=["works__img_size", "works__card"])
+                            a(class="works__link works__img_size" href=siteUrlList[i])
+                                img(class="works__img_size" src="img/"+siteImgList[i] alt="interior shop")
+                                div(class="works-card__mask")
+                                    h4(class=["heading", "works__heading"])=siteTitleList[i]
+
+        section#skills.skills
+            div(class=["container", "container_section", "skills__container"])
+                h3(class=["heading", "heading_sections"])="навыки"
+                .line
+                div(class=["paragrath", "paragrath_sections"])="Тут что-нибудь появится, а пока Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet beatae cumque, ea eos rem ut vero voluptatum. Alias aliquam cumque delectus deserunt dignissimos doloremque dolores doloribus eos error fugiat laborum molestiae, molestias natus nesciunt nobis quas qui quidem \n"
+
