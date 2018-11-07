@@ -65,7 +65,7 @@ html(lang="ru")
 
                     - for(let i=0; i<siteImgList.length; i++)
                         div(class=["works__img_size", "works__card"])
-                            a(class="works__link works__img_size" href=siteUrlList[i])
+                            a(class="works__link works__img_size" href="works/"+siteUrlList[i]+"/index.html" target="_blank")
                                 img(class="works__img_size" src="img/"+siteImgList[i] alt="interior shop")
                                 div(class="works-card__mask")
                                     h4(class=["heading", "works__heading"])=siteTitleList[i]
