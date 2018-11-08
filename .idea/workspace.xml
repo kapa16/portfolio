@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="171dc859-1d87-4811-ac6a-9c036316ce19" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/scss/_styles.sass" beforeDir="false" afterPath="$PROJECT_DIR$/dist/scss/_styles.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/test.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,19 +16,20 @@
     <session id="-218247053">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="3" />
-          <entry key="html" value="3" />
-          <entry key="js" value="1" />
+          <entry key="html" value="4" />
+          <entry key="js" value="2" />
           <entry key="php" value="1" />
           <entry key="pug" value="1" />
           <entry key="sass" value="6" />
@@ -36,26 +38,26 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="3" />
-          <entry key="HTML" value="3" />
+          <entry key="HTML" value="4" />
           <entry key="Jade" value="1" />
-          <entry key="JavaScript" value="1" />
+          <entry key="JavaScript" value="2" />
           <entry key="PHP" value="1" />
           <entry key="Sass" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="10" />
-          <entry key="js" value="415" />
-          <entry key="pug" value="1704" />
+          <entry key="html" value="54" />
+          <entry key="js" value="920" />
+          <entry key="pug" value="1729" />
           <entry key="sass" value="1510" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="10" />
-          <entry key="Jade" value="1704" />
-          <entry key="JavaScript" value="415" />
+          <entry key="HTML" value="54" />
+          <entry key="Jade" value="1729" />
+          <entry key="JavaScript" value="920" />
           <entry key="Sass" value="1510" />
         </counts>
       </usages-collector>
@@ -104,12 +106,21 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/dist/pug/index.pug">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="264">
-                  <caret line="53" selection-start-line="53" selection-end-line="53" />
+                <state relative-caret-position="743">
+                  <caret line="82" column="77" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="77" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/dist/test.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="357">
+                  <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
@@ -117,12 +128,21 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/dist/scss/_styles.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="459">
-                  <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
+                <state relative-caret-position="357">
+                  <caret line="111" column="7" selection-start-line="111" selection-start-column="7" selection-end-line="111" selection-end-column="7" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/dist/js/main.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="535">
+                  <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
                 </state>
               </provider>
             </entry>
@@ -155,14 +175,14 @@
         <option value="$PROJECT_DIR$/dist/scss/syles.sass" />
         <option value="$PROJECT_DIR$/dist/scss/_exdents.sass" />
         <option value="$PROJECT_DIR$/dist/scss/_variables.sass" />
-        <option value="$PROJECT_DIR$/dist/test.html" />
         <option value="$PROJECT_DIR$/dist/js/jquery.js" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/dist/scss/main.sass" />
         <option value="$PROJECT_DIR$/dist/scss/_animate.sass" />
-        <option value="$PROJECT_DIR$/dist/pug/index.pug" />
-        <option value="$PROJECT_DIR$/dist/js/main.js" />
         <option value="$PROJECT_DIR$/dist/scss/_styles.sass" />
+        <option value="$PROJECT_DIR$/dist/pug/index.pug" />
+        <option value="$PROJECT_DIR$/dist/test.html" />
+        <option value="$PROJECT_DIR$/dist/js/main.js" />
       </list>
     </option>
   </component>
@@ -249,8 +269,7 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="74" />
-    <option name="y" value="-22" />
+    <option name="x" value="68" />
     <option name="width" value="1400" />
     <option name="height" value="978" />
   </component>
@@ -260,35 +279,29 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="Portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Portfolio" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="Portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Portfolio" type="462c0819:PsiDirectoryNode" />
               <item name="dist" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="Portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Portfolio" type="462c0819:PsiDirectoryNode" />
               <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="pug" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -363,11 +376,12 @@
       <workItem from="1541573105229" duration="9769000" />
       <workItem from="1541597921334" duration="70000" />
       <workItem from="1541606497564" duration="895000" />
+      <workItem from="1541658469713" duration="7382000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42010000" />
+    <option name="totallyTimeSpent" value="49392000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -379,17 +393,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1035" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1034" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49834436" visible="true" weight="0.18550107" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49834436" visible="true" weight="0.18763326" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Gulp" order="2" sideWeight="0.50165564" side_tool="true" weight="0.17857143" />
       <window_info id="npm" order="3" side_tool="true" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32963374" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3529412" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3529412" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39955604" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -467,13 +480,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/scss/_animate.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -495,24 +501,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/test.html">
+    <entry file="file://$PROJECT_DIR$/dist/scss/_styles.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="8" />
+        <state relative-caret-position="357">
+          <caret line="111" column="7" selection-start-line="111" selection-start-column="7" selection-end-line="111" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/pug/index.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="743">
+          <caret line="82" column="77" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="77" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/scss/_styles.sass">
+    <entry file="file://$PROJECT_DIR$/dist/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
+        <state relative-caret-position="357">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
         </state>
       </provider>
     </entry>

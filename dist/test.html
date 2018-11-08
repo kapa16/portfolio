@@ -5,6 +5,41 @@
     <title>Title</title>
 </head>
 <body>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet beatae cumque, ea eos rem ut vero voluptatum. Alias aliquam cumque delectus deserunt dignissimos doloremque dolores doloribus eos error fugiat laborum molestiae, molestias natus nesciunt nobis quas qui quidem quis tenetur totam veniam veritatis vero? Asperiores beatae exercitationem hic tempore?
+    <canvas id="value1" height="140" width="140"></canvas>
+    <script>
+        window.onload = function () {
+            var canvas = document.getElementById("value1"),
+                context = canvas.getContext("2d");
+
+            let run = function (){
+                let time = (new Date().getTime()- startTime)/ 4000;
+                let startAngle = (-Math.PI / 2);
+                let endAngle = ((Math.PI * 2) / 100 * 90)-(Math.PI / 2);
+
+                if(time < 1) {
+                    requestAnimationFrame(run);
+                    endAngle = startAngle +(endAngle - startAngle)* time;
+                }
+
+                context.clearRect(0,0, 140,140);
+                context.beginPath();
+                context.arc(70, 70, 65, startAngle, endAngle, false);
+                //context.closePath();
+                context.strokeStyle = "#ff5252";
+                context.lineWidth = 10;
+                context.stroke();
+            }
+
+            var startTime = (new Date().getTime());
+            run();
+
+            context.fillStyle = "#666";
+            context.font = "bold 20pt Arial";
+            context.textAlign = "center";
+            context.textBaseline = "middle";
+            context.fillText("90%", 70, 70);
+
+        }
+    </script>
 </body>
 </html>
